@@ -2,7 +2,7 @@ import ctypes
 awareness = ctypes.c_int()
 ctypes.windll.shcore.SetProcessDpiAwareness(2)
 
-import json
+import yaml
 import tkinter as tk
 from const import *
 
@@ -65,8 +65,8 @@ def get_cordinates(agent):
         START_Y + (agent // COL) * SIZE + SIZE / 2,
     )
 
-with open("agent.json", "r") as f:
-    data = json.load(f)
+with open("agent.yaml", "r") as f:
+    data = yaml.safe_load(f)
     
 owned_agent = []
 
@@ -371,9 +371,11 @@ def onclose():
     for key in state:
         if state[key].get():
             data[key] = True
+        else:
+            data[key] = False
     
-    with open("agent.json", "w") as f:
-        f.write(json.dumps(data))
+    with open("agent.yaml", "w") as f:
+        yaml.dump(data, f)
         
     window.destroy()
 
