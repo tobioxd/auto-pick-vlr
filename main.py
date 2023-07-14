@@ -2,7 +2,7 @@ import ctypes
 awareness = ctypes.c_int()
 ctypes.windll.shcore.SetProcessDpiAwareness(2)
 
-import json
+import yaml
 import tkinter as tk
 from const import *
 
@@ -65,23 +65,14 @@ def get_cordinates(agent):
         START_Y + (agent // COL) * SIZE + SIZE / 2,
     )
 
-
-try:
-    jsonfile = open("agent.json", "r")
-except IOError:
-    print("File not found")
-    exit()
-
-data = json.load(jsonfile)
-jsonfile.close()
-
+with open("agent.yaml", "r") as f:
+    data = yaml.safe_load(f)
+    
 owned_agent = []
-agent_count = 0
 
 for key in data:
     if data[key] == True:
         owned_agent.append(key)
-        agent_count += 1
 
 
 select = tk.StringVar()
@@ -117,7 +108,6 @@ def pick():
             return x, y
 
 
-button = tk.Button(window, text="Pick", command=pick).pack()
 
 
 def dropdownupdate():
@@ -146,12 +136,14 @@ for key in data:
     state[key] = tk.BooleanVar()
     state[key].set(data[key])
 
+button = tk.Button(window, text="Pick", command=pick).pack()
+
 left_frame = tk.Frame(window, width=250, bg="red")
 left_frame.pack(side=tk.LEFT, fill=tk.Y)
 
 right_frame = tk.Frame(window, width=250, bg="blue")
 right_frame.pack(side=tk.RIGHT, fill=tk.Y)
-if True:
+def showcheckbox():
     astra = tk.Checkbutton(
         left_frame,
         text="Astra",
@@ -371,5 +363,22 @@ if True:
         command=handle_owned_agent,
     )
     yoru.pack()
+
+showcheckbox()
+
+def onclose():
+    # save data
+    for key in state:
+        if state[key].get():
+            data[key] = True
+        else:
+            data[key] = False
+    
+    with open("agent.yaml", "w") as f:
+        yaml.dump(data, f)
+        
+    window.destroy()
+
+window.protocol("WM_DELETE_WINDOW", onclose)
 
 window.mainloop()
