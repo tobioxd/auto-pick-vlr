@@ -75,8 +75,8 @@ for key in data:
         owned_agent.append(key)
 
 
-select = tk.StringVar()
-drop_down = tk.OptionMenu(window, select, *owned_agent)
+select = tk.StringVar(value="- Pick an agent -")
+drop_down = tk.OptionMenu(window, select,"- Pick an agent -", *owned_agent)
 drop_down.pack()
 
 
@@ -138,10 +138,10 @@ for key in data:
 
 button = tk.Button(window, text="Pick", command=pick).pack()
 
-left_frame = tk.Frame(window, width=250, bg="red")
+left_frame = tk.Frame(window, width=250)
 left_frame.pack(side=tk.LEFT, fill=tk.Y)
 
-right_frame = tk.Frame(window, width=250, bg="blue")
+right_frame = tk.Frame(window, width=250)
 right_frame.pack(side=tk.RIGHT, fill=tk.Y)
 def showcheckbox():
     astra = tk.Checkbutton(
