@@ -1,4 +1,34 @@
-install dependencies: 
+# VALORANT Autopick Agent
+Automatically picks a selected agent as soon as possible.
+
+## How to use
+1. Download and install dependencies: 
 ```bash
 $ pip3 install -r requirements.txt
 ```
+2. Run VALORANT
+3. Run start.bat
+Tick all the agents that you have 
+![](https://imgur.com/6Plp97o)
+
+Pick the agent you want to instalock and press pick 
+![](https://imgur.com/8RatT7g)
+
+4. Start a queue
+5. Before you get into the agent selection screen, press "P" to start the script 
+![](https://imgur.com/xFnGP95)
+
+6. After your agent get selected, press "O" again to stop the script
+![](https://imgur.com/Q1PKb2R)
+
+7. Enjoy your game 😊
+
+## FAQ
+- Does Vanguard block Autopick Agent?
+> No, it doesn't. It's just a simple script that simulates mouse clicks.
+
+- Does it work on fullscreen?
+> It works on every mode with the resolution of the screen is 1920x1080. If you want to use it on other resolutions, you can change the coordinates in the script.
+
+----------------------------------------------------------------
+> > tool made by tedomi2705 ... 

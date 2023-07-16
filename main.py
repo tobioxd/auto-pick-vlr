@@ -4,7 +4,7 @@ ctypes.windll.shcore.SetProcessDpiAwareness(2)
 
 import yaml
 import tkinter as tk
-from const import *
+from const import * 
 
 # importing time and threading
 import time
