@@ -8,17 +8,21 @@ $ pip3 install -r requirements.txt
 ```
 2. Run VALORANT
 3. Run start.bat
-Tick all the agents that you have 
+    Tick all the agents that you have 
+
 ![](https://imgur.com/6Plp97o.png)
 
     Pick the agent you want to instalock and press pick 
+
 ![](https://imgur.com/8RatT7g.png)
 
 4. Start a queue
 5. Before you get into the agent selection screen, press "P" to start the script 
+
 ![](https://imgur.com/xFnGP95.png)
 
 6. After your agent get selected, press "O" again to stop the script
+
 ![](https://imgur.com/Q1PKb2R.png)
 
 7. Enjoy your game 😊
