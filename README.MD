@@ -9,11 +9,15 @@ $ pip3 install -r requirements.txt
 2. Run VALORANT
 3. Run start.bat
 
-    Tick all the agents that you have 
+```bash
+Tick all the agents that you have 
+``` 
 
 ![](https://imgur.com/6Plp97o.png)
 
-    Pick the agent you want to instalock and press pick 
+```bash
+Pick the agent you want to instalock and press pick 
+```  
 
 ![](https://imgur.com/8RatT7g.png)
 
