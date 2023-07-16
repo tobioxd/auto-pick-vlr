@@ -1,4 +1,5 @@
 # VALORANT Autopick Agent
+![](https://imgur.com/hvM0W8z.png)
 Automatically picks a selected agent as soon as possible.
 
 ## How to use
