@@ -8,6 +8,7 @@ $ pip3 install -r requirements.txt
 ```
 2. Run VALORANT
 3. Run start.bat
+
     Tick all the agents that you have 
 
 ![](https://imgur.com/6Plp97o.png)
@@ -35,4 +36,4 @@ $ pip3 install -r requirements.txt
 > It works on every mode with the resolution of the screen is 1920x1080. If you want to use it on other resolutions, you can change the coordinates in the script.
 
 ----------------------------------------------------------------
-> > tool made by tedomi2705 ... 
+> > tool made by tedomi2705 to prevent haooccho instalock Reyna xd 
