@@ -41,4 +41,4 @@ Pick the agent you want to instalock and press pick
 > It works on every mode with the resolution of the screen is 1920x1080. If you want to use it on other resolutions, you can change the coordinates in the script.
 
 ----------------------------------------------------------------
-> > tool made by tedomi2705 to prevent haooccho instalock Reyna xd 
+> > tool made by tedomi2705 & walacker to prevent haooccho instalock Reyna xd 
